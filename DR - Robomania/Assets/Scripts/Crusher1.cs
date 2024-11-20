@@ -17,4 +17,8 @@ public class Crusher1 : MonoBehaviour
         Vector2 newPosition = new Vector2(newXPosition, newYPosition);
         transform.position = newPosition;
     }
+    void Start()
+    {
+        GetComponent<Rigidbody2D>().AddForce(Vector3.left * speed, ForceMode2D.Impulse);
+    }
 }
