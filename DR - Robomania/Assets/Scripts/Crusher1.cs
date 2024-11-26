@@ -20,5 +20,6 @@ public class Crusher1 : MonoBehaviour
     void Start()
     {
         GetComponent<Rigidbody2D>().AddForce(Vector3.left * speed, ForceMode2D.Impulse);
+        GetComponent<Rigidbody2D>().AddForce(Vector3.right * speed, ForceMode2D.Impulse);
     }
 }
